@@ -1,8 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-// import PieChart from './Graphs/PieChart';
+import GraphCarousel from './Graphs';
 import {getSearchTweets} from '../reducers/twitter';
-import {emotinator, tweetsToParagraph} from '../utils';
+import {emotinator, tweetsToParagraph, sentiMentator} from '../utils';
+import sentiment from 'sentiment';
+
+import PieChartEmotion from './Graphs/PieChartEmotion';
+import PieChartPolarity from './Graphs/PieChartPolarity';
 
 const mapDispatchToProps = (dispatch) => {
 	return {
@@ -37,6 +41,8 @@ export class SearchTweets extends React.Component{
 	}
 
 	render(){
+		let sentObj = sentiment(tweetsToParagraph(this.props.searchTweets))[0]
+		console.log('sentiment object for tweets', sentObj)
 		return (
 			<div>
 				<form onSubmit={(event) => this.handleSubmit(event)}>
@@ -57,10 +63,15 @@ export class SearchTweets extends React.Component{
 					</div>
 				</form>
 
-				<div id="pieBox1" className="col-xs-12 col-md-6 col-centered">
-{/*					<PieChart emotionObject={emotinator(tweetsToParagraph(this.props.searchTweets))[0]} />*/}
-				</div>
-
+				{/*<div>
+					<GraphCarousel emotionObject={emotinator(tweetsToParagraph(this.props.searchTweets))[0]} sentimentObject={sentiMentator(sentiment(tweetsToParagraph(this.props.searchTweets))[0], "tweets")} />
+				</div>*/}
+				{/*<div>
+					<PieChartEmotion emotionObject={emotinator(tweetsToParagraph(this.props.searchTweets))[0]} />
+				</div>*/}
+				{/*<div>
+					<PieChartPolarity sentimentObject={sentiMentator(sentiment(tweetsToParagraph(this.props.searchTweets))[0], "tweets")} />
+				</div>*/}
 		</div>
 		);
 	}
