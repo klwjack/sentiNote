@@ -41,8 +41,8 @@ export class SearchTweets extends React.Component{
 	}
 
 	render(){
-		let sentObj = sentiment(tweetsToParagraph(this.props.searchTweets))[0]
-		console.log('sentiment object for tweets', sentObj)
+		// let sentObj = sentiMentator(sentiment(tweetsToParagraph(this.props.searchTweets))[0]
+		// console.log('sentiment object for tweets', sentObj)
 		return (
 			<div>
 				<form onSubmit={(event) => this.handleSubmit(event)}>
