@@ -14,25 +14,20 @@ class AboutMe extends Component {
 
         return (
             <div>
-                            
-                <section id="about-section">
+                
+                <div>
+                    <img className="home-page-image" src="https://static.pexels.com/photos/262272/pexels-photo-262272.jpeg" />
+                     <h1>This is Sentimentum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sodales libero, quis placerat sapien scelerisque sit amet. Aenean sed pharetra augue, non blandit urna. Vestibulum sollicitudin bibendum diam, eget rhoncus odio placerat vitae. Cras lorem tellus, euismod at porta in, molestie eu urna. Phasellus nec ullamcorper nibh. Maecenas eu massa venenatis, consequat dolor eget, maximus felis. Proin nibh odio, semper vitae volutpat id, aliquam maximus justo. Sed ultrices leo at libero bibendum sagittis.</p>
+                </div>
+                {/*<section id="about-section">
                      <div className="container">
                         <div className="row">
                             <Parallax speedDivider="5" backgroundStyle={background}>
-                                <div id="text" className="col-lg-8 col-lg-offset-2">
+                                <div id="text" className="col m5 s10 offset-m7 offset-s2">
                                     <h1>This is Sentimentum</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sodales libero, quis placerat sapien scelerisque sit amet. Aenean sed pharetra augue, non blandit urna. Vestibulum sollicitudin bibendum diam, eget rhoncus odio placerat vitae. Cras lorem tellus, euismod at porta in, molestie eu urna. Phasellus nec ullamcorper nibh. Maecenas eu massa venenatis, consequat dolor eget, maximus felis. Proin nibh odio, semper vitae volutpat id, aliquam maximus justo. Sed ultrices leo at libero bibendum sagittis.</p>
                                 </div>
-                            </Parallax>
-                        </div>
-                    </div>
-                </section>
-
-                {/*<section>
-                     <div className="container">
-                        <div className="row">
-                            <Parallax speedDivider="5" backgroundStyle={background}>
-                                <h1>This is Sentimentum</h1>
                             </Parallax>
                         </div>
                     </div>

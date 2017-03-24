@@ -45,7 +45,7 @@ body {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
 }
 
 .floatLeft {
@@ -351,6 +351,12 @@ section .parallax {
     margin: auto;
 }
 
+.home-page-image{
+  float: left;
+  width: 350px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
 
 
 
