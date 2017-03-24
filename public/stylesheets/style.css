@@ -340,20 +340,17 @@ section {
     text-align: center;
 }
 
-/* .react-simple-parallax-bg is generate by the component */
-/*section .react-simple-parallax-bg {
+.react-simple-parallax-bg is generate by the component 
+section .react-simple-parallax-bg {
     background-image: url('https://www.pexels.com/photo/alone-anime-art-artistic-262272/');
     height: 750px;
-}*/
+}
 
 section .parallax {
     top: 200px;
     margin: auto;
 }
-#about-section {
-	color: #fff;
-  padding: 70px 0;
-}
+
 
 
 
