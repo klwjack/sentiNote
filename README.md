@@ -31,9 +31,6 @@ https://www.postgresql.org/
 ### Installing 
   
 ```
-git clone https://github.com/jamiekimyu/sentinote
-```
-
 Make sure PostgreSQL is running and in your project directory, run
   
 ```
